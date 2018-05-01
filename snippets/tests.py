@@ -26,6 +26,7 @@ class AccountTests(APITestCase):
     
     def test_create_account(self):
         url = reverse('snippet-list')
+
     
         data = {
             "owner": "disalles7",

@@ -147,7 +147,8 @@ class ActorShowView(generics.ListAPIView,
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
 
-class ActorShowDetail(generics.RetrieveAPIView):
+class ActorShowDetail(generics.RetrieveAPIView,
+                        generics.UpdateAPIView):
     queryset = Actor.objects.all()
     serializer_class = ActorSerializer
 

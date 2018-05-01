@@ -3,11 +3,16 @@ from filmes.models import Filme, Actor, LANGUAGE_CHOICES, STYLE_CHOICES
 from django.contrib.auth.models import User
 
 
+
+class ActorSerializer(serializers.HyperlinkedModelSerializer):
+    class Meta:
+        model = Actor
+        fields = ('id', 'name', 'age','filme')
+
 class FilmeSerializer(serializers.HyperlinkedModelSerializer):
 
     owner = serializers.HyperlinkedIdentityField(view_name='filme-owner', format='html')
-    actors = serializers.HyperlinkedRelatedField(many=True, view_name='actor-detail', read_only=True)
-
+    actors = ActorSerializer(many=True ,required=False)
 
     class Meta:
         model = Filme
@@ -46,8 +51,3 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
         model = User
         fields = ('url', 'id', 'username', 'filme')
 
-class ActorSerializer(serializers.HyperlinkedModelSerializer):
-
-    class Meta:
-        model = Actor
-        fields = ('id', 'name', 'age','filme')
