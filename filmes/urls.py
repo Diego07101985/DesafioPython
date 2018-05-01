@@ -12,7 +12,7 @@ urlpatterns = [
     path('filmes/<slug:slug>/', views.FilmeDetailSlug.as_view(), name='filme-slug'),
     path('filmes/<int:pk>/owner/', views.FilmeOwner.as_view(), name='filme-owner'),
     path('actors/', views.ActorShowView.as_view(), name='actor-list'),
-    path('actors/<int:pk>', views.ActorShowDetail.as_view(), name='actor-detail'),
+    path('actors/<int:pk>/', views.ActorShowDetail.as_view(), name='actor-detail'),
     path('users/', views.UserList.as_view(), name='user-list'),
     path('users/<int:pk>/', views.UserDetail.as_view(), name='user-detail')
 ]
