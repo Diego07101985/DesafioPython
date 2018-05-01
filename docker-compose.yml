@@ -1,0 +1,9 @@
+version: '2.3'
+
+services: 
+  cache:
+    image: redis:4.0.6-alpine
+    hostname: redis1
+    ports:
+      - "6379:6379"
+
