@@ -8,9 +8,9 @@ Foi desenvolvida uma aplicação back end :
  - Lista de filmes (Com paginação)
  
  {
-    "count":"" ,
-    "next": "",
-    "previous": ,
+    "count":numbet ,
+    "next": string,
+    "previous": string,
     "results": [
         {
             "url":hateoas_url,
