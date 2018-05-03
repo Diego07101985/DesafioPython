@@ -89,10 +89,6 @@ class FilmeDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = (permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly)
     
     def put(self, request, *args, **kwargs):
-        slug = request.data['slug']
-        if self.queryset.filter(slug = slug).exists():
-            return Response(status=status.HTTP_409_CONFLICT)
-
         logger.info('class FilmeDetail - dentro do metodo PUT reseta cache key filme')
         cache.delete_pattern("*filme*")
         return self.update(request, *args, **kwargs)
