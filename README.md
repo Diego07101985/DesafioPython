@@ -136,6 +136,11 @@ para entrar na maquina : Opcional
 
 Eu adicionei a minha virtual env para comodidade pois já se encontra todas as dependências necessárias para este projeto
 
+## Testes
+execute o comando para rodar os tests
+python manage.py test filmes.tests
+
+
 ## Iniciar Projeto
 na pasta raiz do projeto  source /venv/bin/activate
 execut python manage.py runserver
