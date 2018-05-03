@@ -21,7 +21,6 @@ from core import views
 urlpatterns = [
     path('', views.api_root),
     path('admin/', admin.site.urls),
-    url(r'^', include('snippets.urls')),
     url(r'^', include('filmes.urls')),
     url(r'^api-auth/', include('rest_framework.urls'))
 ]
