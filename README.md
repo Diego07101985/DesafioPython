@@ -4,8 +4,8 @@
 
 Caminho padrão : http://127.0.0.1:8000/
 
-Foi desenvolida uma aplicação back end :
- - Lista de filmes (Com paginacao)
+Foi desenvolvida uma aplicação back end :
+ - Lista de filmes (Com paginação)
  
  {
     "count": ,
@@ -45,7 +45,7 @@ Foi desenvolida uma aplicação back end :
         }
     ]
 }
- - Mostra os delalhes http://127.0.0.1:8000/actors/1/
+ - Mostra os detalhes http://127.0.0.1:8000/actors/1/
  - Api root http://127.0.0.1:8000/ :
   {
       "users": "http://127.0.0.1:8000/users/",
@@ -54,11 +54,11 @@ Foi desenvolida uma aplicação back end :
   }
   - Buscar por slug http://127.0.0.1:8000/filmes/{slug}/
   - Buscar por slug http://127.0.0.1:8000/filmes/{id}/
-  - Busca por ordenacao http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
+  - Busca por ordenação http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{id}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{slug}
  
-  Foi implementado tambem  em Filmes POST , PUT ,DELETE, PATCH
+  Foi implementado também em Filmes POST, PUT, DELETE, PATCH
   POST http://127.0.0.1:8000/filmes/   
 
      {
@@ -74,7 +74,7 @@ Foi desenvolida uma aplicação back end :
      }
 
 
-     PUT http://127.0.0.1:8000/filmes/{id}   ou http://127.0.0.1:8000/filmes/{slug}
+     PUT http://127.0.0.1:8000/filmes/{id}  ou http://127.0.0.1:8000/filmes/{slug}
 
      {
         "title": string,
@@ -95,7 +95,7 @@ Foi desenvolida uma aplicação back end :
     PATCH http://127.0.0.1:8000/filmes/likeMovie/{slug}
   
 
-  Foi implementado tambem  em Actor POST , PUT ,DELETE, PATCH
+  Foi implementado também em Actor POST, PUT, DELETE, PATCH
 
    http://127.0.0.1:8000/actors/   
 
@@ -120,7 +120,7 @@ Foi desenvolida uma aplicação back end :
 
 ## Instalação
  
-E necessario instalar o  docker  no sistema 
+É necessário instalar o  docker  no sistema 
 na pasta raiz onde se encontra o docker-compose.yml
 executar o comando 
 docker-compose up -d
@@ -134,12 +134,12 @@ para entrar na maquina : Opcional
 ## Virtual Env
 
 
-Eu adicionei a minha virtual env para comodidade pos ja se encontra todas as dependencias necessarias para este projeto
+Eu adicionei a minha virtual env para comodidade pois já se encontra todas as dependências necessárias para este projeto
 
 ## Iniciar Projeto
 na pasta raiz do projeto  source /venv/bin/activate
 execut python manage.py runserver
 
-Área administrativa /admin {Existe uma funcionalidade na api padrao django rest framework  http://127.0.0.1:8000/api-auth/login/?next=/filmes/admin/   usuario defaul :{ user :disalles7 password : Disilva@220 }
+Área administrativa /admin {Existe uma funcionalidade na api padrao django rest framework  http://127.0.0.1:8000/api-auth/login/?next=/filmes/admin/   usuário default :{ user :disalles7 password : Disilva@220 }
 
 Acesso completo a api
