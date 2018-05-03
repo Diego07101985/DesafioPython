@@ -5,7 +5,7 @@
 Caminho padrão : http://127.0.0.1:8000/
 
 Foi desenvolvida uma aplicação back end :
- - Lista de filmes (Com paginação)
+Lista de filmes (Com paginação)
  
  {
     "count":numbet ,
