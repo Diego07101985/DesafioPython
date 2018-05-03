@@ -97,7 +97,7 @@ Foi desenvolida uma aplicação back end :
 
   Foi implementado tambem  em Actor POST , PUT ,DELETE, PATCH
 
-  POST http://127.0.0.1:8000/actors/   
+   http://127.0.0.1:8000/actors/   
 
         {
             "id": number,
