@@ -4,8 +4,8 @@
 
 Caminho padrão : http://127.0.0.1:8000/
 
-Foi desenvolvida uma aplicação back end :
-Lista de filmes (Com paginação)
+- Foi desenvolvida uma aplicação back end :
+- Lista de filmes (Com paginação):
  
  {
     "count":numbet ,
@@ -24,11 +24,10 @@ Lista de filmes (Com paginação)
             "likes": number,
             "published": bolean,
             "owner": string,
-            "actors": []
-                        
-        }
-    ]
-}
+            "actors": object
+        }]
+  }
+
  
  - Lista atores http://127.0.0.1:8000/actors/ 
 
