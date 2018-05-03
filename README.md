@@ -118,7 +118,9 @@ Caminho padrão : http://127.0.0.1:8000/
 
 
 ## Instalação
- 
+Sistema operacional Mac Os / Ubuntu 
+
+ https://docs.docker.com/docker-for-mac/install/
 É necessário instalar o  docker  no sistema 
 na pasta raiz onde se encontra o docker-compose.yml
 executar o comando 
