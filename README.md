@@ -128,7 +128,7 @@ docker-compose up -d
 
 docker-compose exec cache sh
 
-para entrar na maquina
+para entrar na maquina : Opcional
 
 
 ## Virtual Env
