@@ -8,8 +8,8 @@ Foi desenvolvida uma aplicação back end :
  - Lista de filmes (Com paginação)
  
  {
-    "count": ,
-    "next": ,
+    "count":"" ,
+    "next": "",
     "previous": ,
     "results": [
         {
