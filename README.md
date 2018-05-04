@@ -53,7 +53,7 @@ Caminho padrão : http://127.0.0.1:8000/
       "actors": "http://127.0.0.1:8000/actors/"
   }
   - Buscar por slug http://127.0.0.1:8000/filmes/{slug}/
-  - Buscar por slug http://127.0.0.1:8000/filmes/{id}/
+  - Buscar por id http://127.0.0.1:8000/filmes/{id}/
   - Busca por ordenação http://127.0.0.1:8000/filmes/findAllOrderBy?type={tipoCampo}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{id}
   - Incrementar curtidas por id http://127.0.0.1:8000/filmes/likeMovie/{slug}
