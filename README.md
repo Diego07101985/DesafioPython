@@ -132,7 +132,7 @@ python manage.py test filmes.tests
 Na pasta raiz do projeto execute os comandos:
 - docker-compose build
 - docker-compose up -d
-Execute : python manage.py runserver
+- Execute : python manage.py runserver
 
 Área administrativa /admin {Existe uma funcionalidade na api padrao django rest framework  http://127.0.0.1:8000/api-auth/login/?next=/filmes/admin/   usuário default :{ user :disalles7 password : Disilva@220 }
 
