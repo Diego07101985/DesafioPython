@@ -136,16 +136,13 @@ LOGGING = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/1",
+        "LOCATION": "redis://redis:6379/0",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient"
         },
         "KEY_PREFIX": "desafio"
     }
 }
-
-CACHE_TTL = 60 * 15
-
 
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
