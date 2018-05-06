@@ -1,9 +1,34 @@
-version: '2.3'
+version: '3'
 
-services: 
-  cache:
-    image: redis:4.0.6-alpine
-    hostname: redis1
+services:
+  web:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
     ports:
-      - "6379:6379"
+      - "8000:8000"
+    restart: always
+    tty: true
+    networks:
+      - redis-net
+    depends_on:
+      - redis
+  redis:
+    image: redis:4.0.6-alpine
+    hostname: redis
+    networks:
+      - redis-net
+    volumes:
+      - redis-data:/data
+
+networks:
+  redis-net:
+
+volumes:
+  redis-data:
+     driver: local         
+
+    
+
 

@@ -1,0 +1,8 @@
+Django>=2.0
+psycopg2
+colorlog
+djangorestframework
+django-cors-headers
+pygments
+Pillow
+django_redis
