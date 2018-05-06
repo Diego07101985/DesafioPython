@@ -122,29 +122,16 @@ Caminho padrão : http://127.0.0.1:8000/
 Sistema operacional Mac Os / Ubuntu 
 
  https://docs.docker.com/docker-for-mac/install/
-É necessário instalar o  docker  no sistema 
-na pasta raiz onde se encontra o docker-compose.yml
-executar o comando 
-docker-compose up -d
-
-
-docker-compose exec cache sh
-
-para entrar na maquina : Opcional
-
-
-## Virtual Env
-
-
-Eu adicionei a minha virtual env para comodidade pois já se encontra todas as dependências necessárias para este projeto
+ É necessário instalar o  docker  no sistema 
 
 ## Testes
 Execute o comando para rodar os tests:
 python manage.py test filmes.tests
 
-
 ## Iniciar Projeto
-Na pasta raiz do projeto  source /venv/bin/activate
+Na pasta raiz do projeto execute os comandos:
+- docker-compose build
+- docker-compose up -d
 Execute : python manage.py runserver
 
 Área administrativa /admin {Existe uma funcionalidade na api padrao django rest framework  http://127.0.0.1:8000/api-auth/login/?next=/filmes/admin/   usuário default :{ user :disalles7 password : Disilva@220 }
